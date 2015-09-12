@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 public class Main {
 
 
-    public static int calculation (double a, double b, double c)
+    public static double calculation (double a, double b, double c)
     {
         double d;
         d = b*b-4*a*c;
