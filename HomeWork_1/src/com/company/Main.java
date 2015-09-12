@@ -33,11 +33,12 @@ public class Main {
 
         try {
             System.out.println("a = ");
-            a = Integer.parseInt(read.readLine());
+
+            a = Double.parseDouble(read.readLine().replace(",", "."));
             System.out.println("b = ");
-            b = Integer.parseInt(read.readLine());
+            b = Double.parseDouble(read.readLine().replace(",", "."));
             System.out.println("c = ");
-            c = Integer.parseInt(read.readLine());
+            c = Double.parseDouble(read.readLine().replace(",", "."));
 
             calculation(a, b, c);
 
