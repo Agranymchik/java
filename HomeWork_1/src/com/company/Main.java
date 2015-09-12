@@ -10,17 +10,20 @@ public class Main {
     public static double calculation (double a, double b, double c)
     {
         double d;
-        d = b*b-4*a*c;
-        System.out.println("d = " + d);
-        if (d>0){
-            System.out.println("x1 = " + (-b - Math.sqrt(d)) / (2*a));
-            System.out.println("x2 = " + (-b + Math.sqrt(d)) / (2*a));
-            return 0;
-        } else if (d == 0){
-            System.out.println("x = " + (-b) / (2*a));
-            return 0;
+        if (a !=0 && b != 0 && c !=0) {
+            d = b*b-4*a*c;
+            System.out.println("d = " + d);
+            
+            if (d > 0) {
+                System.out.println("x1 = " + (-b - Math.sqrt(d)) / (2 * a));
+                System.out.println("x2 = " + (-b + Math.sqrt(d)) / (2 * a));
+                return 0;
+            } else if (d == 0) {
+                System.out.println("x = " + (-b) / (2 * a));
+                return 0;
+            }
         }
-        System.out.println("D < 0, no solution...");
+        System.out.println("no solution...");
         return  0;
     }
 
